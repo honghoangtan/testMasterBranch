@@ -1,31 +1,36 @@
 
 import './App.css'
 import Header from './layouts/Header/Header'
-import Scroll from './pages/Scroll/Scroll'
-import Technology from './pages/Technology/Technology'
-import Blog from './pages/Blogs/Blog'
-import Signals from './pages/Signals/Signals'
-import Trader from './pages/Trader/Trader'
-import Contact from './pages/Contact/Contact'
-import Footer from './layouts/Footer/Footer'
 
-// import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
+
+import Hello from './component/Hello'
+import Services from './layouts/Services/Services'
+import Resume from './layouts/Resume/Resume'
+import Work from './layouts/Work/Work'
+import Contact from './layouts/Contact/Contact'
+import PageTransition from './component/PageTransition'
+import StairEffect from './component/StairEffect'
+
+
 function App() {
 
   return (
     <>
       <Header />
-      <Technology />
-      <Scroll />
-      <Blog />
-      <Signals />
-      <Trader />
-      <Contact />
-      <Footer />
 
-      {/* <Routes>
-        <Route path='/about' element={<Scroll />} />
-      </Routes> */}
+      <StairEffect />
+
+      <PageTransition>
+        <Routes>
+          <Route path='/' element={<Hello />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/work' element={<Work />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </PageTransition>
+
     </>
   )
 }

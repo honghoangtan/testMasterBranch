@@ -5,25 +5,33 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    'data-[state=active]:bg-accent',
+    'data-[state=active]:text-primary',
+    'data-[state=active]:font-bold',
+    'data-[state=active]:shadow-sm',
+    // Add any other classes you need
+  ],
   theme: {
-    extend: {
-      fontFamily: {
-        'Montserrat': "Montserrat",
-        'popin': 'Poppins'
-      },
-      animation: {
-        loop: 'loop 50s linear infinite',
-      },
-      keyframes: {
-        loop: {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
-        }
-      },
-      colors: {
-        bg: 'rgba(255 85 85 85/100)'
-      }
+    container: {
+      center: true,
+      padding: '15px'
     },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '960px',
+      xl: '1200px',
+    },
+    extend: {
+      colors: {
+        primary: '#1c1c22',
+        accent: {
+          DEFAULT: '#00ff99',
+          hover: '#00e187'
+        }
+      }
+    }
   },
   plugins: [],
 }

@@ -17,5 +17,9 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "quotes": [0],
+    "avoidEscape": 0,
+    "allowTemplateLiterals": 0,
+    "no-useless-escape": 0
   },
 }

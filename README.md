@@ -1,8 +1,17 @@
-# React + Vite
+# https://www.youtube.com/watch?v=dImgZ_AH7uA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# npx shadcn-ui add input button scroll-area select sheet tabs textarea tooltip
 
-Currently, two official plugins are available:
+# Bước trên gặp lỗi nên tôi đã thử dùng (npm i shadcn-ui)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# npm framer-motion
+
+# npm react-countup
+
+# npm react-tabs
+
+# npm install react-perfect-scrollbar
+
+# npm i swiper
+
+# npm i react-select
