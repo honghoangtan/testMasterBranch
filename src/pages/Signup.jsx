@@ -57,7 +57,16 @@ const Signup = () => {
                 console.log(error);
                 setError(error.message)
                 setAuthing(false)
+                setEmail('')
+                setPassword('')
+                setConfirmPassword('')
             })
+    }
+
+    const handleEnterPress = (event) => {
+        if (event.key === 'Enter') {
+            signUpWithEmail()
+        }
     }
 
   return (
@@ -98,6 +107,7 @@ const Signup = () => {
                             className='w-full text-white py-2 mb-4 bg-transparent border-b border-gray-500 focus:outline-none focus:border-white'
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
+                            onKeyDown={handleEnterPress}
                         />
                     </div>
 

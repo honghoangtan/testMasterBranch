@@ -57,6 +57,8 @@ const Login = () => {
                 console.log(error);
                 setError(error.message)
                 setAuthing(false)
+                setEmail('')
+                setPassword('')
             })
     }
 
