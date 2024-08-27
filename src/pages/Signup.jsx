@@ -60,6 +60,7 @@ const Signup = () => {
                 setEmail('')
                 setPassword('')
                 setConfirmPassword('')
+                inputRef.current.focus();
             })
     }
 

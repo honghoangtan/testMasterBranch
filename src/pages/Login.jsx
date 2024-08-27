@@ -59,6 +59,7 @@ const Login = () => {
                 setAuthing(false)
                 setEmail('')
                 setPassword('')
+                inputRef.current.focus();
             })
     }
 
