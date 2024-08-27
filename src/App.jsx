@@ -1,36 +1,43 @@
 
 import './App.css'
-import Header from './layouts/Header/Header'
-
 import { Routes, Route } from 'react-router-dom'
 
-import Hello from './component/Hello'
-import Services from './layouts/Services/Services'
-import Resume from './layouts/Resume/Resume'
-import Work from './layouts/Work/Work'
-import Contact from './layouts/Contact/Contact'
-import PageTransition from './component/PageTransition'
-import StairEffect from './component/StairEffect'
+import Home from './pages/Home'
+import Dashboar from './pages/Dashboar'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
 
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBznhdWLclpMGLbRHDoVYhtpz6JX2ZjSMw",
+  authDomain: "authentication1-891de.firebaseapp.com",
+  projectId: "authentication1-891de",
+  storageBucket: "authentication1-891de.appspot.com",
+  messagingSenderId: "350047289031",
+  appId: "1:350047289031:web:3788c2a1fc992f319a48e2"
+};
+
+initializeApp(firebaseConfig);
 
 function App() {
 
   return (
     <>
-      <Header />
-
-      <StairEffect />
-
-      <PageTransition>
         <Routes>
-          <Route path='/' element={<Hello />} />
-          <Route path='/services' element={<Services />} />
+          <Route path='/' element={<Home />} />
+          {/* <Route path='/services' element={<Services />} />
           <Route path='/resume' element={<Resume />} />
           <Route path='/work' element={<Work />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
-      </PageTransition>
+          <Route path='/contact' element={<Contact />} /> */}
 
+          <Route path='/login' element={<Login />} />
+
+          <Route path='/signup' element={<Signup />} />
+
+          <Route path='/dashboar' element={<Dashboar />} />
+
+        </Routes>
     </>
   )
 }

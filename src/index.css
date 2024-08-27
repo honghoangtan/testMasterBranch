@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.gradient-text {
+    background: linear-gradient(to right, #7c75fd, #9ae5fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 @layer base {
     body {
         @apply bg-primary text-white leading-loose
@@ -17,8 +23,16 @@
         @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold
     }
 
+    .h4 {
+        @apply text-[15px] xl:text-[20px] leading-[1.1] font-medium
+    }
+
+    .btncss {
+        @apply px-[36px] py-[32px] rounded-lg
+    }
+
     .outline {
-        @apply border border-accent bg-transparent text-accent hover:bg-accent hover:text-primary
+        @apply border-2 border-white bg-transparent text-white hover:bg-gray-200 hover:text-primary
     }
     .text-outline {
         -webkit-text-stroke: 1px #ffffff;
@@ -28,4 +42,19 @@
         -webkit-text-stroke: 1px #00ff99;
     }
     
+}
+
+@layer utilities {
+
+    .btn_dark_rounded {
+        @apply border border-green-90 bg-green-90 px-7 py-3 text-white transition-all hover:bg-black rounded-full
+    }
+
+    .regular-14 {
+        @apply text-[14px] font-[400]
+    }
+
+    .bold-18 {
+        @apply text-[18px] font-[700]
+    }
 }
