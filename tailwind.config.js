@@ -30,15 +30,21 @@ export default {
     },
     extend: {
       colors: {
-        primary: '#1c1c22',
+        lightblue: '#5684AE',
         accent: {
           DEFAULT: '#00ff99',
           hover: '#00e187'
         },
-        green: {
-          50: '#30AF5B',
-          90: '#292C27'
-        },
+        darkblue: '#0F4C81',
+        lightorange: '#FFE4C8',
+        darkOrange: '#F9BE81',
+        calendercolor: '#E4F6ED'
+      },
+      fontFamily: {
+        sans: ["Open Sans"]
+      },
+      gridTemplateColumns: {
+        "1/5": "1fr 5fr"
       }
     }
   },
